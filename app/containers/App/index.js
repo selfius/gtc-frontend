@@ -1,14 +1,7 @@
-/**
- *
- * App
- *
- * This component is the skeleton around the actual pages, and should only
- * contain code that should be seen on all pages. (e.g. navigation bar)
- */
-
 import React from 'react';
 import styled from 'styled-components';
 import GtcBadge from 'components/GtcBadge';
+import Login from 'components/Login';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -22,6 +15,7 @@ const AppWrapper = styled.div`
 export default function App() {
   return (
     <AppWrapper>
+      <Login />
       <GtcBadge />
     </AppWrapper>
   );

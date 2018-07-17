@@ -12,3 +12,8 @@
 export const LOAD_REPOS = 'boilerplate/App/LOAD_REPOS';
 export const LOAD_REPOS_SUCCESS = 'boilerplate/App/LOAD_REPOS_SUCCESS';
 export const LOAD_REPOS_ERROR = 'boilerplate/App/LOAD_REPOS_ERROR';
+
+export const LOAD_BALANCE = 'gtc/App/LOAD_BALANCE';
+export const LOAD_BALANCE_SUCCESS = 'gtc/App/LOAD_BALANCE_SUCCESS';
+
+export const CHANGE_USERNAME = 'gtc/App/CHANGE_USERNAME';
