@@ -4,13 +4,12 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import injectSaga from 'utils/injectSaga';
 
-import Input from './Input';
-import Form from './Form';
+import Input from 'components/Input';
+import Form from 'components/Form';
 import { loadBalance, changeUsername } from '../../containers/App/actions';
 import { createStructuredSelector } from 'reselect';
 import { makeSelectCurrentUser } from '../../containers/App/selectors';
 import saga from './saga';
-
 
 /* eslint-disable react/prefer-stateless-function */
 export class Login extends React.PureComponent {

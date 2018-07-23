@@ -19,7 +19,7 @@ const initialState = fromJS({
 function appReducer(state = initialState, action) {
   switch (action.type) {
     case LOAD_BALANCE:
-      return state.setIn(['userData', 'balance'], false).set('loading', true);
+      return state.setIn(['userData', 'balance'], 0).set('loading', true);
     case LOAD_BALANCE_SUCCESS:
       return state
         .setIn(['userData', 'balance'], action.balance)

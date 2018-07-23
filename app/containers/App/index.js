@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import GtcBadge from 'components/GtcBadge';
 import Login from 'components/Login';
+import PrBoard from 'containers/PrBoard';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -17,6 +18,7 @@ export default function App() {
     <AppWrapper>
       <Login />
       <GtcBadge />
+      <PrBoard />
     </AppWrapper>
   );
 }
