@@ -14,7 +14,7 @@ import makeSelectPrBoard, {
   makeSelectPRs,
 } from './selectors';
 
-import {addPrUrl,changeUrl} from './actions';
+import { addPrUrl, changeUrl } from './actions';
 import reducer from './reducer';
 import saga from './saga';
 
@@ -29,21 +29,23 @@ export class PrBoard extends React.PureComponent {
           value={this.props.url}
           onChange={this.props.onChange}
         />
+        {this.props.prs.map(pr => <div key={pr}>{pr}</div>)}
       </Form>
     );
   }
 }
 
 PrBoard.propTypes = {
-  dispatch: PropTypes.func.isRequired,
   url: PropTypes.string,
   onChange: PropTypes.func,
   onSubmitForm: PropTypes.func,
+  prs: PropTypes.array,
 };
 
 const mapStateToProps = createStructuredSelector({
   prboard: makeSelectPrBoard(),
   url: makeSelectCurrentUrl(),
+  prs: makeSelectPRs(),
 });
 
 function mapDispatchToProps(dispatch) {
