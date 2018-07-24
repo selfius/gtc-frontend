@@ -18,6 +18,7 @@ import {addPrUrl,changeUrl} from './actions';
 import reducer from './reducer';
 import saga from './saga';
 
+/* eslint-disable react/prefer-stateless-function */
 export class PrBoard extends React.PureComponent {
   render() {
     return (
