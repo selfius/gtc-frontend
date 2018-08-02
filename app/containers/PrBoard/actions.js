@@ -1,8 +1,14 @@
-import { ADD_PR_URL, CHANGE_URL } from './constants';
+import { BEGIN_ADD_PR_URL, CHANGE_URL, END_ADD_PR_URL } from './constants';
 
 export function addPrUrl() {
   return {
-    type: ADD_PR_URL,
+    type: BEGIN_ADD_PR_URL,
+  };
+}
+
+export function succefullyAddedPrUrl() {
+  return {
+    type: END_ADD_PR_URL,
   };
 }
 
